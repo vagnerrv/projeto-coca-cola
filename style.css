@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Gabarito;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: #000;
+}
+
+.circle{
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    position: relative;
+    max-width: 150px;
+}
+.header .menu ul{
+    position: relative;
+    display: flex;
+}
+
+.header .menu ul li{
+    list-style: none;
+}
+
+.header .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.text h2{
+    font-size: 2em;
+    /*margin-bottom: 10px;*/
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
+.text h2 span{
+    font-size: 3.5em;
+    font-weight: 900;
+    color: #ff0000;
+}
+
+.text p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 8px 20px;
+    background: #ff0000;
+    border-radius: 40px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.text a:hover{
+    transform: translateY(-10px);
+}
+
+.socialMedia{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+}
+
+.socialMedia img{
+    filter: invert(1);
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.socialMedia img:hover{
+    transform: translateY(-10px);
+}
+
+.containerImg{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+.containerImg img{
+    width: 150px;
+}
+
+.containerImg .img1{
+    transform: rotate(-15deg);
+}
+
+.img2{
+    transform: rotate(5deg);
+}
+
+.img3{
+    transform: rotate(15deg);
+}
+
+.img4{
+    transform: rotate(-20deg);
+}
